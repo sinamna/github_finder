@@ -1,0 +1,120 @@
+/*  
+    Add background image and set the container div. 
+    - The goal here is a background image on a website that covers the entire browser window at all times.
+*/
+
+body {
+    background: url("../images/background.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*
+    The container holds all objects in this page. for that I use flex display. 
+*/
+
+.container {
+    width: 50%;
+    min-height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    opacity: 0.6;
+    padding: 5px;
+    z-index: 100;
+
+    border-radius: 10px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*
+    Header specify fieldset header style
+*/
+
+.header {
+    position: relative;
+    color: darkblue;
+    font-weight: 500;
+    font-size: 30px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* 
+    form card width
+*/
+.card {
+    width: 50%;
+    padding: 2em;
+}
+
+/*
+    fieldset styles
+*/
+.fieldset {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*
+    All Buttons unic style
+*/
+.button {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: 5px;
+    background-color:  darkblue;
+    color: white;
+    border-radius: 10px;
+}
+/*
+    align components to center
+*/
+.center{
+
+    text-align: center;
+}
+
+  
+/*
+    notice section 
+*/
+.action_result {
+    display: none;
+    height: 40%;
+}
+
+/*
+    fixes size of form section 
+*/
+.form_card_content {
+    height: 40%;
+}
+
+/*
+    set initial display for info card
+*/
+.info_card {
+    display: none;
+}
+
+
+/*
+    set size for picture
+*/
+#github_picture{
+    width: 200px;
+    height: inherit;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Finder</title>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <!-- page left part -->
+
+        <div class="result_card card">
+            <div class="info_card">
+                <fieldset class="fieldset center">
+                    <legend class="header">Github Info</legend>
+                    <div class="github_info center">
+                        <div class="info_image center">
+                            <img id="github_picture" class="center">
+                        </div>
+                        <div id="info_list"></div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+        <!-- page right part -->
+
+        <div class="form_card card">
+            <form class="form_card_content">
+                <fieldset class="fieldset center">
+                    <legend class="header">Find ID</legend>
+                    <label for="github_id">Enter Github ID: </label>
+                    <input type="text" id="github_id" maxlength="255" pattern="[A-Za-z ]+" required>
+                    <br><br>
+                    <br>
+                    <button class="search button">Search</button><br>
+                </fieldset>
+            </form>
+            <div class="action_result">
+                <fieldset class="fieldset">
+                    <legend class="header">Notice</legend>
+                    <span id="notice"></span>
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
